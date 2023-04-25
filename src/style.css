@@ -1,0 +1,115 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: uppercase;
+    background-color: beige;
+    
+}
+
+.dosdivs{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+     
+    
+}
+
+.contenedor form{
+    background: cornsilk;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    padding: 20px;
+    
+}
+
+.contenedor form .inputcaja{
+    margin-top: 30px;
+    
+}
+
+.contenedor form .inputcaja label{
+    display: block;
+    color: blueviolet;
+    padding-bottom: 5px;
+    
+}
+
+.contenedor form .inputcaja input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rosybrown;
+    color: rgb(165, 42, 69)65, 42, 42;
+}
+
+.contenedor form .botonpagar {
+    min-height: 10vh;
+    min-width: 85vh;
+    width: 100px;
+    background: linear-gradient(45deg, rgb(184, 84, 139) , rgb(132, 83, 177) );
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(228, 199, 199);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s linear
+}
+
+
+.contenedor form .botonpagar:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+
+
+.imagenbanner{
+    display: flex;
+    align-items: center;
+}
+.imagenbanner img {
+    width: 1300px;
+    height: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+
+.imagencurso{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-right: 70px;
+    margin-left: 130px;
+    margin-bottom: 50px;
+
+}
+.imagencurso img {
+    border-radius: 20px;
+    width: 380px;
+    height: 500px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    
+}
