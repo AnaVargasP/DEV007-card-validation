@@ -2,7 +2,7 @@ const validator = {
 
   isValid: function (contenidoinput) {
 
-    // Paso 1: Convertir el número de tarjeta en un array de dígitos
+    // Paso 1: Convertir el número de tarjeta en un array de dígitos 
     const digits = contenidoinput.toString().split('').map(Number);
 
     // Paso 2: Iterar sobre los dígitos, comenzando desde el último dígito
